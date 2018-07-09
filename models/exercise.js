@@ -18,4 +18,4 @@ const exercise = new Schema ({
 });
 
 
-module.exports = mongoose.model('Exercise', Schema);
+module.exports = mongoose.model('Exercise', exercise);

@@ -1,3 +1,16 @@
 type Query {
   test: String!
+  exercises: [Exercise!]!
+}
+
+type Mutation {
+  addExercise(muscle: String!, title: String!, description: String!): Exercise!
+  removeExercise(id: ID!): String
+}
+
+type Exercise {
+  muscle: String!
+  title: String!
+  description: String!
+  id: ID!
 }
